@@ -20,25 +20,26 @@
       text-align: center;
     }
 
-    header h1 {
-      margin: 0;
-    }
-
-    header p {
-      margin-top: 5px;
-      font-size: 14px;
-    }
-
     section {
       padding: 20px;
-      max-width: 1100px;
+      max-width: 1200px;
       margin: auto;
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+
+    h3 {
+      margin-top: 30px;
+      color: #1e7f43;
     }
 
     .produtos {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 20px;
+      margin-top: 15px;
     }
 
     .produto {
@@ -56,12 +57,8 @@
       margin-bottom: 10px;
     }
 
-    .produto h3 {
+    .produto h4 {
       margin: 10px 0 5px;
-    }
-
-    .produto p {
-      margin: 5px 0;
     }
 
     .btn {
@@ -84,7 +81,7 @@
       color: white;
       text-align: center;
       padding: 15px;
-      margin-top: 30px;
+      margin-top: 40px;
       font-size: 14px;
     }
   </style>
@@ -92,66 +89,92 @@
 
 <body>
 
-  <header>
-    <h1>PERMIX MERCEARIA</h1>
-    <p>Qualidade, preço justo e confiança</p>
-  </header>
+<header>
+  <h1>PERMIX MERCEARIA</h1>
+  <p>Qualidade, preço justo e confiança</p>
+</header>
 
-  <section>
-    <h2>Quem Somos</h2>
-    <p>
-      A Permix Mercearia é uma mercearia de bairro comprometida em oferecer
-      produtos de qualidade, bom atendimento e preços acessíveis para a comunidade.
-    </p>
-  </section>
+<section>
+  <h2>Quem Somos</h2>
+  <p>
+    A Permix Mercearia é uma mercearia de bairro que trabalha com produtos
+    essenciais, buscando sempre qualidade, bom atendimento e preços acessíveis
+    para nossos clientes.
+  </p>
+</section>
 
-  <section>
-    <h2>Nossos Produtos</h2>
+<section>
+  <h2>Nossos Produtos</h2>
 
-    <div class="produtos">
+  <!-- CATEGORIA: ALIMENTOS -->
+  <h3>🍚 Alimentos</h3>
+  <div class="produtos">
 
-      <!-- PRODUTO 1 -->
-      <div class="produto">
-        <img src="img/arroz.jpg" alt="Arroz 5kg">
-        <h3>Arroz 5kg</h3>
-        <p>Tipo 1</p>
-        <p><strong>R$ 28,90</strong></p>
-        <a class="btn" href="https://wa.me/5561998786817?text=Quero%20comprar%20Arroz%205kg" target="_blank">
-          Comprar no WhatsApp
-        </a>
-      </div>
-
-      <!-- PRODUTO 2 -->
-      <div class="produto">
-        <img src="img/feijao.jpg" alt="Feijão 1kg">
-        <h3>Feijão 1kg</h3>
-        <p>Carioca</p>
-        <p><strong>R$ 7,99</strong></p>
-        <a class="btn" href="https://wa.me/5561998786817?text=Quero%20comprar%20Feijão%201kg" target="_blank">
-          Comprar no WhatsApp
-        </a>
-      </div>
-
-      <!-- PRODUTO 3 -->
-      <div class="produto">
-        <img src="img/oleo.jpg" alt="Óleo de Soja">
-        <h3>Óleo de Soja</h3>
-        <p>900ml</p>
-        <p><strong>R$ 6,49</strong></p>
-        <a class="btn" href="https://wa.me/5561998786817?text=Quero%20comprar%20Óleo%20de%20Soja" target="_blank">
-          Comprar no WhatsApp
-        </a>
-      </div>
-
+    <div class="produto">
+      <img src="img/arroz.jpg" alt="Arroz 5kg">
+      <h4>Arroz 5kg</h4>
+      <p>Tipo 1</p>
+      <p><strong>R$ 28,90</strong></p>
+      <a class="btn" href="https://wa.me/5561998786817?text=Quero%20comprar%20Arroz%205kg" target="_blank">
+        Comprar no WhatsApp
+      </a>
     </div>
-  </section>
 
-  <section style="text-align:center;">
-    <a class="btn" href="https://wa.me/5561998786817" target="_blank">
-      Falar no WhatsApp
-    </a>
-  </section>
+    <div class="produto">
+      <img src="img/feijao.jpg" alt="Feijão 1kg">
+      <h4>Feijão 1kg</h4>
+      <p>Carioca</p>
+      <p><strong>R$ 7,99</strong></p>
+      <a class="btn" href="https://wa.me/5561998786817?text=Quero%20comprar%20Feijão%201kg" target="_blank">
+        Comprar no WhatsApp
+      </a>
+    </div>
 
-  <footer>
-    © 2026 – Permix Mercearia • Atendimento via WhatsApp
-  </
+  </div>
+
+  <!-- CATEGORIA: BEBIDAS -->
+  <h3>🥤 Bebidas</h3>
+  <div class="produtos">
+
+    <div class="produto">
+      <img src="img/refrigerante.jpg" alt="Refrigerante 2L">
+      <h4>Refrigerante 2L</h4>
+      <p>Sabores variados</p>
+      <p><strong>R$ 8,99</strong></p>
+      <a class="btn" href="https://wa.me/5561998786817?text=Quero%20comprar%20Refrigerante%202L" target="_blank">
+        Comprar no WhatsApp
+      </a>
+    </div>
+
+  </div>
+
+  <!-- CATEGORIA: LIMPEZA -->
+  <h3>🧼 Limpeza</h3>
+  <div class="produtos">
+
+    <div class="produto">
+      <img src="img/detergente.jpg" alt="Detergente">
+      <h4>Detergente</h4>
+      <p>500ml</p>
+      <p><strong>R$ 2,49</strong></p>
+      <a class="btn" href="https://wa.me/5561998786817?text=Quero%20comprar%20Detergente" target="_blank">
+        Comprar no WhatsApp
+      </a>
+    </div>
+
+  </div>
+
+</section>
+
+<section style="text-align:center;">
+  <a class="btn" href="https://wa.me/5561998786817" target="_blank">
+    Falar no WhatsApp
+  </a>
+</section>
+
+<footer>
+  © 2026 – Permix Mercearia • Atendimento via WhatsApp
+</footer>
+
+</body>
+</html>
